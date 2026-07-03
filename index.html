@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>나의 AI 공부 페이지</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="logo">
+        <span class="logo-icon">✦</span>
+        <div>
+          <strong>Study Space</strong>
+          <p>AI 수업 노트</p>
+        </div>
+      </div>
+
+      <nav class="menu" aria-label="주요 메뉴">
+        <a href="#dashboard" class="active">🏠 대시보드</a>
+        <a href="#subjects">📚 과목 정리</a>
+        <a href="#todo">✅ 오늘 할 일</a>
+        <a href="#notes">📝 학습 노트</a>
+        <a href="#resources">🔗 자료 모음</a>
+      </nav>
+
+      <div class="sidebar-card">
+        <p class="label">이번 주 목표</p>
+        <strong>AI 개념 3개 정리하기</strong>
+        <div class="progress"><span></span></div>
+        <small>진행률 72%</small>
+      </div>
+    </aside>
+
+    <main class="content">
+      <section id="dashboard" class="hero">
+        <p class="eyebrow">Personal Learning Dashboard</p>
+        <h1>나만의 노션형 공부 페이지</h1>
+        <p>
+          수업 계획, 공부 목표, 메모, 참고 링크를 한 화면에서 정리할 수 있는
+          깔끔한 HTML/CSS 학습 페이지입니다.
+        </p>
+        <div class="hero-actions">
+          <a href="#todo" class="button primary">오늘 공부 시작하기</a>
+          <a href="#notes" class="button secondary">노트 보기</a>
+        </div>
+      </section>
+
+      <section class="stats-grid" aria-label="학습 현황">
+        <article class="stat-card">
+          <span>📖</span>
+          <p>완료한 강의</p>
+          <strong>12개</strong>
+        </article>
+        <article class="stat-card">
+          <span>⏱️</span>
+          <p>이번 주 공부 시간</p>
+          <strong>18시간</strong>
+        </article>
+        <article class="stat-card">
+          <span>🔥</span>
+          <p>연속 학습</p>
+          <strong>6일</strong>
+        </article>
+      </section>
+
+      <section id="subjects" class="section">
+        <div class="section-title">
+          <p class="eyebrow">Subjects</p>
+          <h2>과목 정리</h2>
+        </div>
+        <div class="card-grid">
+          <article class="subject-card">
+            <div class="subject-icon purple">AI</div>
+            <h3>인공지능 기초</h3>
+            <p>머신러닝, 딥러닝, 생성형 AI의 핵심 개념을 정리합니다.</p>
+            <span class="tag">핵심 개념</span>
+          </article>
+          <article class="subject-card">
+            <div class="subject-icon blue">UX</div>
+            <h3>프롬프트 설계</h3>
+            <p>좋은 질문을 만드는 구조와 예시를 모아둡니다.</p>
+            <span class="tag">실습 중심</span>
+          </article>
+          <article class="subject-card">
+            <div class="subject-icon green">WEB</div>
+            <h3>HTML / CSS</h3>
+            <p>웹페이지 구조와 스타일링을 직접 구현하며 공부합니다.</p>
+            <span class="tag">포트폴리오</span>
+          </article>
+        </div>
+      </section>
+
+      <section id="todo" class="section two-column">
+        <div class="panel">
+          <div class="section-title compact">
+            <p class="eyebrow">Today</p>
+            <h2>오늘 할 일</h2>
+          </div>
+          <ul class="todo-list">
+            <li><input type="checkbox" checked /> AI 수업 자료 1회독</li>
+            <li><input type="checkbox" /> 핵심 용어 10개 정리</li>
+            <li><input type="checkbox" /> 실습 코드 따라 하기</li>
+            <li><input type="checkbox" /> 모르는 내용 질문 목록 만들기</li>
+          </ul>
+        </div>
+
+        <div class="panel quote-panel">
+          <p class="eyebrow">Motivation</p>
+          <blockquote>“오늘 조금 배운 것이 내일의 큰 실력이 됩니다.”</blockquote>
+          <p>작은 공부 기록도 꾸준히 쌓이면 나만의 지식 데이터베이스가 됩니다.</p>
+        </div>
+      </section>
+
+      <section id="notes" class="section">
+        <div class="section-title">
+          <p class="eyebrow">Notes</p>
+          <h2>학습 노트</h2>
+        </div>
+        <div class="note-list">
+          <article class="note">
+            <span class="date">06.26</span>
+            <div>
+              <h3>생성형 AI란?</h3>
+              <p>텍스트, 이미지, 코드 등 새로운 콘텐츠를 만들어내는 AI 기술입니다.</p>
+            </div>
+          </article>
+          <article class="note">
+            <span class="date">06.27</span>
+            <div>
+              <h3>좋은 프롬프트의 조건</h3>
+              <p>역할, 목적, 형식, 제약 조건을 명확하게 적으면 더 좋은 결과를 얻을 수 있습니다.</p>
+            </div>
+          </article>
+          <article class="note">
+            <span class="date">06.28</span>
+            <div>
+              <h3>웹페이지 구성</h3>
+              <p>HTML은 구조를 만들고 CSS는 디자인을 담당합니다.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="resources" class="section resources">
+        <div class="section-title">
+          <p class="eyebrow">Resources</p>
+          <h2>자료 모음</h2>
+        </div>
+        <div class="resource-grid">
+          <a href="https://developer.mozilla.org/ko/" target="_blank" rel="noreferrer">MDN Web Docs</a>
+          <a href="https://www.w3schools.com/" target="_blank" rel="noreferrer">W3Schools</a>
+          <a href="https://www.notion.so/" target="_blank" rel="noreferrer">Notion</a>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
